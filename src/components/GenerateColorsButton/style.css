@@ -1,0 +1,17 @@
+.generate-button {
+    padding: 15px 30px;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 40px;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    border: 1px solid #000000;
+    background-color: #F8F8FF;    
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.generate-button:hover {
+    background: #F0F0F0;
+}
