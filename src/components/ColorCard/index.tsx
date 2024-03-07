@@ -1,15 +1,18 @@
 import React from 'react'
 import './style.css'
+import ColorButton from '../ColorButton';
 
 interface ColorCardProtocol {
-    text: string
+    text: string,
+    locked: boolean,
+    handler: Function
 }
 
-const ColorCard = ({text}: ColorCardProtocol) => {
+const ColorCard = ({text, locked, handler}: ColorCardProtocol) => {
     return (
         <div className='color-card'>
-            <button></button>
-            <p>text</p>
+            <ColorButton locked={locked} handler={handler} />
+            <p className='color-text'>{text}</p>
         </div>
     );
 }
